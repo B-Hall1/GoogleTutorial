@@ -6,6 +6,15 @@
     color: #555;
 }
 
+body {
+    height: 100vh;
+    overflow: hidden;
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -64,6 +73,11 @@ li a:hover {
     align-items: center;
 }
 
+form {
+    position: relative;
+    margin-top: 30px;
+  }
+
 input {
     width: 580px;
     height: 45px;
@@ -87,6 +101,22 @@ input:focus {
     top: 15px;
     left: 15px;
   }
+
+  .mic {
+    width: 15px;
+    position: absolute;
+    top: 12px;
+    left: 540px;
+  }
+  
+  .buttons {
+    width: 350px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
   
   button {
     border: 1px solid transparent;
@@ -94,3 +124,43 @@ input:focus {
     background-color: #f8f9fa;
     border-radius: 5px;
   } 
+
+  button:hover {
+    border: 1px solid #eee;
+    box-shadow: 0 0 2px 1px rgba(189, 189, 189, 0.5);
+    cursor: pointer;
+  }
+
+  footer {
+    width: 100%;
+    background-color: #f2f2f2;
+  }
+  
+  .panel {
+    border-bottom: 1px solid #ddd;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  
+  .panel > * {
+    flex-basis: 33%;
+  }
+
+  p {
+    color: grey;
+    padding-left: 13px;
+  }
+
+  .carbon {
+    text-align: center;
+  }
+  
+  .leaf {
+    width: 12px;
+  }
+  
+  .right {
+    justify-content: flex-end;
+  }
