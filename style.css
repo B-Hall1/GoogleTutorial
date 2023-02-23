@@ -50,3 +50,9 @@ li a:hover {
 .menu-button {
     width: 15px;
   }
+
+.profile-pic {
+    margin-top: 6px;
+    border-radius: 50%;
+    width: 100%;
+  }
